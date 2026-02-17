@@ -16,7 +16,7 @@ int main() {
 
    printf("Choose 0 for Snake, 1 for Water, 2 for Gun:\n ");
    scanf("%d", &player);
-   printf("%d", computer);
+   printf("Computer chose: %d\n", computer);
 
    if (player == 0 && computer == 0) {
        printf("It's a Draw!\n");
