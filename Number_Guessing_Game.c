@@ -2,51 +2,31 @@
 #include <stdlib.h>
 #include <time.h>
 
-
 int main() {
-    int player, computer;
-   /*
-    0 --> Snake
-    1 --> Water 
-    2 --> Gun 
-    */
 
-   srand(time(0));
-   computer = rand() % 3;
+    // Initialize random number generator
+    srand(time(0));
 
-   printf("Choose 0 for Snake, 1 for Water, 2 for Gun:\n ");
-   scanf("%d", &player);
-   printf("Computer chose: %d\n", computer);
+    // Generate random number between 1 and 100
+    int randomNumber = (rand() % 100) + 1;
+    int no_of_guesses = 0;
+    int guessed_number;
 
-   if (player == 0 && computer == 0) {
-       printf("It's a Draw!\n");
-   }
-   else if (player == 0 && computer == 1) {
-       printf("You Win!\n");
-   }
-   else if (player == 0 && computer == 2) {
-       printf("You Lose!\n");
-   }
-   else if (player == 1 && computer == 0) {
-       printf("You Lose!\n");
-   }
-   else if (player == 1 && computer == 1) {
-       printf("It's a Draw!\n");
-   }
-   else if (player == 1 && computer == 2) {
-       printf("You Win!\n");
-   }
-   else if (player == 2 && computer == 0) {
-       printf("You Win!\n");
-   }
-   else if (player == 2 && computer == 1) {
-       printf("You Lose!\n");
-   }
-   else if (player == 2 && computer == 2) {
-       printf("It's a Draw!\n");
-   }
-   else {
-        printf("Invalid Input! Please choose 0, 1, or 2.\n");
-   }
+
+    do {
+        printf("Guess the number (between 1 and 100): ");
+        scanf("%d", &guessed_number);
+        no_of_guesses++;
+
+        if (guessed_number > randomNumber) {
+            printf("Lower number please!\n");
+        } else if (guessed_number < randomNumber) {
+            printf("Higher number please!\n");
+        } else {
+            printf("Congrats!!\n");
+            printf("You guessed the number in %d attempts.\n", no_of_guesses);
+        }
+    } while (guessed_number != randomNumber);
+
     return 0;
 }
