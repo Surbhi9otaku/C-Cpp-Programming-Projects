@@ -54,7 +54,7 @@ int main() {
     quizQuestions.push_back(Question("Jujutsu Kaisen: Who is known as the \"Strongest Jujutsu Sorcerer\"?", options1, 1));
 
     string options2[4] = {"Monkey D. Luffy", "Gol D. Roger", "Shanks", "Portgas D. Ace"};
-    quizQuestions.push_back(Question("One Piece: What is the name of Luffy’s signature straw hat's original owner?", options2, 2));
+    quizQuestions.push_back(Question("One Piece: What is the name of Luffy's signature straw hat's original owner?", options2, 2));
 
     string options3[4] = {"Telepathy", "Super Strength", "Time Travel", "Shapeshifting"};
     quizQuestions.push_back(Question("Spy x Family: What is Anya’s secret power?", options3, 1));
@@ -99,7 +99,7 @@ int main() {
         }
         else{
             cout << "Wrong!  The correct answer was: " << quizQuestions[i].getCorrectOptionText() << "\n";
-        }  
+        }
     }
 
     // Final score
