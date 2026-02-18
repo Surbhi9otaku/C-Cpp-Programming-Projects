@@ -57,7 +57,7 @@ int main() {
     quizQuestions.push_back(Question("One Piece: What is the name of Luffy's signature straw hat's original owner?", options2, 2));
 
     string options3[4] = {"Telepathy", "Super Strength", "Time Travel", "Shapeshifting"};
-    quizQuestions.push_back(Question("Spy x Family: What is Anya’s secret power?", options3, 1));
+    quizQuestions.push_back(Question("Spy x Family: What is Anya's secret power?", options3, 1));
 
     //Medium
     string options4[4] = {"Naruto Uzumaki", "Sasuke Uchiha", "Kakashi Hatake", "Sakura Haruno"};
@@ -74,12 +74,12 @@ int main() {
     quizQuestions.push_back(Question("Attack on Titan: What was the name of the town where the Colossal Titan first breached Wall Maria?", options7, 1));
 
     string options8[4] = {"White", "Black", "Red", "Orange"};
-    quizQuestions.push_back(Question("Bleach: What is the name of Ichigo’s Inner Hollow?", options8, 1));
+    quizQuestions.push_back(Question("Bleach: What is the name of Ichigo's Inner Hollow?", options8, 1));
 
     string options9[4] = {"Future Gadget #7", "Future Gadget #8", "Future Gadget #6", "Phone Microwave"};
     quizQuestions.push_back(Question("Steins;Gate: What is the \"Phone Microwave\" (the time machine) officially called by Okabe?", options9, 2));
 
-    string options10[4] = {"Law of Transmutation", "Equivalent Exchange", "Human Sacrifice", "Philosopher’s Rule"};
+    string options10[4] = {"Law of Transmutation", "Equivalent Exchange", "Human Sacrifice", "Philosopher's Rule"};
     quizQuestions.push_back(Question("Fullmetal Alchemist: What is the principle that states \"In order to obtain something, something of equal value must be lost\"?", options10, 2));
 
 
