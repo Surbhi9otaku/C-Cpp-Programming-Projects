@@ -94,11 +94,11 @@ int main() {
         cin >> answer;
 
         if (quizQuestions[i].checkAnswer(answer)) {
-            cout << "Correct! 🔥\n";
+            cout << "Correct! \n";
             score += 10; //Each question = 10 points
         }
         else{
-            cout << "Wrong! 😢 The correct answer was: " << quizQuestions[i].getCorrectOptionText() << "\n";
+            cout << "Wrong!  The correct answer was: " << quizQuestions[i].getCorrectOptionText() << "\n";
         }  
     }
 
@@ -109,21 +109,21 @@ int main() {
 
     string rank;
     if (score <= 30) {
-        rank = "🥉 Rookie";
+        rank = " Rookie";
     }
     else if (score <= 60) {
-        rank = "🥈 Pro Fighter";
+        rank = " Pro Fighter";
     }
     else if (score <= 90) {
-        rank = "🥇 Elite Warrior";
+        rank = " Elite Warrior";
     }
     else {
-        rank = "👑 Anime Overlord";
+        rank = " Anime Overlord";
     }
 
 
     cout << "Your rank is: " << rank << "\n";
-    cout << "Thank you for playing, " << username << "! Hope you had fun testing your anime knowledge! 🎉\n";
+    cout << "Thank you for playing, " << username << "! Hope you had fun testing your anime knowledge! \n";
 
     return 0;
 }
