@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -55,6 +57,7 @@ public:
 };
 
 void printMap(vector<vector<char>> &map, int px, int py) {
+
     cout << "\nDungeon Map\n";
 
     for (int i = 0; i < map.size(); i++) {
@@ -71,12 +74,25 @@ void printMap(vector<vector<char>> &map, int px, int py) {
 
 int main() {
 
+    srand(time(0));   // random seed
+
     vector<vector<char>> map = {
         {'.','.','T','.'},
-        {'.','E','.','.'},
+        {'.','.','.','.'},
         {'.','.','X','.'},
         {'.','.','.','O'}
     };
+
+    // Random enemy spawn
+    int ex = rand() % 4;
+    int ey = rand() % 4;
+
+    while(map[ex][ey] != '.') {
+        ex = rand() % 4;
+        ey = rand() % 4;
+    }
+
+    map[ex][ey] = 'E';
 
     Player player;
 
@@ -150,10 +166,38 @@ int main() {
 
             while (enemy.isAlive() && player.isAlive()) {
 
-                enemy.takeDamage(player.getAttack());
-                player.takeDamage(enemy.getAttack());
+                int choice;
 
-                cout << "You hit the enemy!\n";
+                cout << "\n1. Attack\n";
+                cout << "2. Run\n";
+                cout << "Choose: ";
+                cin >> choice;
+
+                if (choice == 1) {
+
+                    enemy.takeDamage(player.getAttack());
+                    cout << "You hit the enemy!\n";
+
+                    if (enemy.isAlive()) {
+                        player.takeDamage(enemy.getAttack());
+                        cout << "Enemy attacked you!\n";
+                    }
+
+                }
+
+                else if (choice == 2) {
+
+                    if (rand() % 2 == 0) {
+                        cout << "You escaped successfully!\n";
+                        break;
+                    }
+                    else {
+                        cout << "Escape failed! Enemy attacked!\n";
+                        player.takeDamage(enemy.getAttack());
+                    }
+
+                }
+
             }
 
             if (!player.isAlive()) {
@@ -161,10 +205,12 @@ int main() {
                 break;
             }
 
-            cout << "Enemy defeated! +30 score\n";
-            player.addScore(30);
+            if (!enemy.isAlive()) {
+                cout << "Enemy defeated! +30 score\n";
+                player.addScore(30);
+                map[x][y] = '.';
+            }
 
-            map[x][y] = '.';
         }
 
         else if (event == 'O') {
