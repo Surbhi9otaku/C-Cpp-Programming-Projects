@@ -72,7 +72,7 @@ Concepts Used:
 ### 📸 Sample Output
 <img width="429" height="897" alt="Screenshot 2026-03-11 221320" src="https://github.com/user-attachments/assets/d15c45ed-2f40-41e8-94c6-05812b48fcd6" />
 
-
+- [Dungeon Escape Game](#4-dungeon-escape-game-c)
 
 ---
 
