@@ -58,6 +58,25 @@ A console-based quiz game to test anime knowledge.
 
 ---
 
+### 4️⃣ Dungeon Escape Game (C++)
+
+A simple console-based dungeon adventure game where the player navigates through a map, collects treasure, fights enemies, and tries to reach the exit.
+
+Concepts Used:
+- Classes & Objects
+- Inheritance
+- Vectors
+- Game logic
+- Conditional statements
+
+### 📸 Sample Output
+<img width="429" height="897" alt="Screenshot 2026-03-11 221320" src="https://github.com/user-attachments/assets/d15c45ed-2f40-41e8-94c6-05812b48fcd6" />
+<img width="487" height="340" alt="Screenshot 2026-03-11 221433" src="https://github.com/user-attachments/assets/edd9e8ac-fd76-43e6-aa1d-27a3b05aa647" />
+
+
+
+---
+
 ## 🛠️ How to Run
 
 ### ▶ For C files:
