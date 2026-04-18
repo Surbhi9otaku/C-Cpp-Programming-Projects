@@ -84,8 +84,7 @@ An enhanced version of the dungeon game where two players take turns navigating 
 
 ### 📸 Sample Output
 <img width="540" height="788" alt="Screenshot 2026-04-18 224415" src="https://github.com/user-attachments/assets/bc01ff4d-2a15-422f-8e3c-26b9a16e2df5" />
-<img width="368" height="448" alt="Screenshot 2026-04-18 223034" src="https://github.com/user-attachments/assets/98806b6d-697d-4500-88d6-6f8d726510dc" />
-<img width="314" height="442" alt="Screenshot 2026-04-18 223209" src="https://github.com/user-attachments/assets/c3a1200d-d034-4bba-a528-6cdba457d44c" />
+<img width="368" height="448" alt="Screenshot 2026-04-18 223034" src="https://github.com/user-attachments/assets/98806b6d-697d-4500-88d6-6f8d726510dc" /><img width="314" height="442" alt="Screenshot 2026-04-18 223209" src="https://github.com/user-attachments/assets/c3a1200d-d034-4bba-a528-6cdba457d44c" />
 
 
 ---
