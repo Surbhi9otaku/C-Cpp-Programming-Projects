@@ -55,7 +55,6 @@ A console-based quiz game to test anime knowledge.
 <img width="1040" height="135" alt="Screenshot 2026-02-18 145641" src="https://github.com/user-attachments/assets/f9663891-7ce5-49b3-98ef-13e7288f76bf" />
 
 
-
 ---
 
 ### 4️⃣ Dungeon Escape Game (C++)
@@ -72,6 +71,21 @@ Concepts Used:
 ### 📸 Sample Output
 <img width="429" height="897" alt="Screenshot 2026-03-11 221320" src="https://github.com/user-attachments/assets/d15c45ed-2f40-41e8-94c6-05812b48fcd6" />
 
+
+### 🚀 Updated Version: 🏰 Multiplayer Dungeon Escape Game (C++)
+
+An enhanced version of the dungeon game where two players take turns navigating the map. Players can fight enemies, collect treasures, and compete to reach the exit first. The game includes random enemy spawning and combat choices (attack or run), making gameplay more dynamic and unpredictable.
+
+**Additional Concepts Used:**
+- Turn-based gameplay
+- Randomization (rand, srand)
+- Multiple objects (2 players)
+- Decision-based combat system
+
+### 📸 Sample Output
+<img width="540" height="788" alt="Screenshot 2026-04-18 224415" src="https://github.com/user-attachments/assets/bc01ff4d-2a15-422f-8e3c-26b9a16e2df5" />
+<img width="368" height="448" alt="Screenshot 2026-04-18 223034" src="https://github.com/user-attachments/assets/98806b6d-697d-4500-88d6-6f8d726510dc" />
+<img width="314" height="442" alt="Screenshot 2026-04-18 223209" src="https://github.com/user-attachments/assets/c3a1200d-d034-4bba-a528-6cdba457d44c" />
 
 
 ---
